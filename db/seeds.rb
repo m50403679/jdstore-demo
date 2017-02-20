@@ -19,9 +19,9 @@ products_demo = [["product1","description1"
 ]
 ]
 
-create_products = for i in 1..20 do
+create_products = for i in 1..5 do
 product_test = products_demo[rand(0..5)]
 Product.create!([title: product_test[0], description: product_test[1], quantity: rand(0..20), price: rand(10..50)*100+99])
 end
 
-puts "20 products created."
+puts "5 products created."
